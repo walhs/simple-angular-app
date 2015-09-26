@@ -1,0 +1,14 @@
+{
+  "name": "simple-angular",
+  "version": "1.0.0",
+  "description": "A simple angular application to start.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Walkirya Heto",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.5.3"
+  }
+}
