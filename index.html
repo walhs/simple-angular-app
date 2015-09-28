@@ -5,16 +5,20 @@
 	<title>Document</title>
 	<script src="/bower_components/angular/angular.min.js"></script>
 	<script src="/src/calculator/calculator.module.js"></script>
+	<script src="/src/calculator/services/calculatorFields.service.js"></script>
+	<script src="/src/calculator/controllers/calculatorFields.controller.js"></script>
+	<script src="/src/calculator/controllers/calculatorSubResult.controller.js"></script>
+	<script src="/src/calculator/controllers/calculatorSumResult.controller.js"></script>
 	<script src="/src/calculator/directives/calculatorFields.directive.js"></script>
 	<script src="/src/calculator/directives/calculatorSumResult.directive.js"></script>
 	<script src="/src/calculator/directives/calculatorSubResult.directive.js"></script>
 	<script src="/src/app.js"></script>
 </head>
-<body ng-app="app">
+<body ng-app="app" ng-controller="AppController">
 	<p>{{1+1}}</p>
 	<p>1+1</p>
 	<calculator-fields></calculator-fields>
-	<calculator-sum-result></calculator-sum-result>
 	<calculator-sub-result></calculator-sub-result>
+	<calculator-sum-result></calculator-sum-result>
 </body>
 </html>

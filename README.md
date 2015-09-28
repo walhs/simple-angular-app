@@ -23,3 +23,5 @@
 ##Sublime: pacote Emmet
 
 	hmtl:5 (control + e)
+
+##python -m SimpleHTTPServer 8080
