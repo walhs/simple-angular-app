@@ -6,18 +6,13 @@
 		.controller('calculatorSubResultController', calculatorSubResult);
 
 	calculatorSubResult.$inject = [
-		'calculatorFieldsService'
+		'calculatorSubResultService'
 	]
 
-	function calculatorSubResult(calculatorFieldsService) {
+	function calculatorSubResult(calculatorSubResultService) {
 		var vc = this;
-		vc.vm = calculatorFieldsService;
-
-		vc.subtrair = subtrair;
-
-		function subtrair() {
-			vc.result = vc.vm.numero1 - vc.vm.numero2;
-		}
+		vc.vm = calculatorSubResultService; //acessando no template
+		vc.vm.init();
 	}
 
 })();

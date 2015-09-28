@@ -6,18 +6,13 @@
 		.controller('calculatorSumResultController', calculatorSumResult);
 
 	calculatorSumResult.$inject = [
-		'calculatorFieldsService'
+		'calculatorSumResultService'
 	]
 
-	function calculatorSumResult(calculatorFieldsService) {
+	function calculatorSumResult(calculatorSumResultService) {
 		var vc = this;
-		vc.vm = calculatorFieldsService;
-
-		vc.soma = soma;
-
-		function soma(){
-			vc.result = vc.vm.numero1 + vc.vm.numero2;
-		}
+		vc.vm = calculatorSumResultService;
+		vc.vm.init();
 	}
 
 })();
